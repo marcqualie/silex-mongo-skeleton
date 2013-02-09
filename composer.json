@@ -1,0 +1,20 @@
+{
+    "name": "marcqualie/silex-mongo-skeleton",
+    "description": "A quick-start installation for Silex and MongoDB",
+    "license": "Beerware",
+    "require": {
+        "php": ">=5.4.0",
+        "ext-mongo": "1.3.*",
+        "silex/silex": "1.0.*@dev",
+        "twig/twig": ">=1.8",
+        "symfony/twig-bridge": "2.1.*",
+        "igorw/config-service-provider": "1.1.*",
+        "marcqualie/mongominify": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/",
+            "Controller": "app/"
+        }
+    }
+}

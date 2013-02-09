@@ -1,0 +1,12 @@
+<?php
+
+return [
+	
+	// MongoDB
+	'mongo.uri' => 'mongodb://127.0.0.1:27017',
+	'mongo.options' => [
+		'connect' => true
+	],
+	'mongominify.schema_dir' => dirname(__DIR__) . '/Schema'
+
+];
