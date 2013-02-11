@@ -20,18 +20,27 @@ class Controller {
 
 
 	/**
-	 * Initialize
+	 * Constructor - Don't Override
 	 */
-	public function init ()
+	public function __construct()
 	{
 		$this->timer_start = microtime(true);
 	}
 
 
 	/**
+	 * Initialize
+	 */
+	public function init()
+	{
+
+	}
+
+
+	/**
 	 * Default Execute
 	 */
-	public function exec ()
+	public function exec()
 	{
 
 	}
@@ -40,7 +49,7 @@ class Controller {
 	/**
 	 * Global Render Function
 	 */
-	public function render ()
+	public function render()
 	{
 
 		$params = $this->params;
@@ -63,7 +72,7 @@ class Controller {
 	public function json ($data, $status = 200, array $extra = array())
 	{
 		$this->app->json(array(
-			'time' => ceil( (microtime(true) - $this->timer_start) * 1000)
+			'time' => round(microtime(true) - $this->timer_start, 4)
 		) + $extra
 		  + array(
 		  		'data' => $data

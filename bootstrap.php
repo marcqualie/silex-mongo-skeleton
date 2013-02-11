@@ -20,7 +20,7 @@ $app->register(new Igorw\Silex\ConfigServiceProvider(__DIR__ . '/app/Config/' . 
 
 
 // Connect to MongoDB and apply MinifySchema
-$app->register(new MongoMinify\SilexServiceProvider());
+$app->register(new MongoMinify\Silex\ServiceProvider());
 
 
 // Register Twig
@@ -32,6 +32,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 
 // App Routes
 $app->get('/', Router::getController('Index'));
+$app->get('/example.json', Router::getController('JsonExample'));
 
 
 // Return Instance

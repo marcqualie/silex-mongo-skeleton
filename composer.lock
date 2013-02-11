@@ -62,23 +62,23 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:marcqualie/mongominify.git",
-                "reference": "36224a7cb916c35995b23161a14c26f16687f23b"
+                "reference": "0d669828ac1f83fba4ae63e443907f9c86e3f159"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/marcqualie/mongominify/zipball/36224a7cb916c35995b23161a14c26f16687f23b",
-                "reference": "36224a7cb916c35995b23161a14c26f16687f23b",
+                "url": "https://api.github.com/repos/marcqualie/mongominify/zipball/0d669828ac1f83fba4ae63e443907f9c86e3f159",
+                "reference": "0d669828ac1f83fba4ae63e443907f9c86e3f159",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3",
-                "ext-mongo": ">=1.3.0"
+                "ext-mongo": ">=1.3.0",
+                "php": ">=5.3.3"
             },
             "require-dev": {
                 "phpunit/phpunit": "3.7.*",
                 "silex/silex": "1.0.*@dev"
             },
-            "time": "2013-02-08 01:50:37",
+            "time": "2013-02-11 20:25:23",
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -91,10 +91,10 @@
             ],
             "description": "A drop-in library which acts as a transparent filter to MongoDB documents and compresses/decompresses data on the fly",
             "keywords": [
-                "database",
-                "mongodb",
                 "compression",
-                "library"
+                "database",
+                "library",
+                "mongodb"
             ]
         },
         {
@@ -139,8 +139,8 @@
             "description": "Pimple is a simple Dependency Injection Container for PHP 5.3",
             "homepage": "http://pimple.sensiolabs.org",
             "keywords": [
-                "dependency injection",
-                "container"
+                "container",
+                "dependency injection"
             ]
         },
         {
@@ -149,12 +149,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Silex.git",
-                "reference": "3563829af174cae24d99938c8c1dab45c33946fa"
+                "reference": "eb15c4b481b57b54adc51c250cd12eb650d619b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Silex/zipball/3563829af174cae24d99938c8c1dab45c33946fa",
-                "reference": "3563829af174cae24d99938c8c1dab45c33946fa",
+                "url": "https://api.github.com/repos/fabpot/Silex/zipball/eb15c4b481b57b54adc51c250cd12eb650d619b3",
+                "reference": "eb15c4b481b57b54adc51c250cd12eb650d619b3",
                 "shasum": ""
             },
             "require": {
@@ -166,31 +166,31 @@
                 "symfony/routing": ">=2.1,<2.3-dev"
             },
             "require-dev": {
-                "twig/twig": ">=1.8.0,<2.0-dev",
-                "swiftmailer/swiftmailer": "4.2.*",
                 "doctrine/dbal": ">=2.2.0,<2.4.0-dev",
-                "symfony/security": ">=2.1,<2.3-dev",
-                "symfony/config": ">=2.1,<2.3-dev",
-                "symfony/locale": ">=2.1,<2.3-dev",
-                "symfony/form": ">=2.1,<2.3-dev",
+                "swiftmailer/swiftmailer": "4.2.*",
                 "symfony/browser-kit": ">=2.1,<2.3-dev",
+                "symfony/config": ">=2.1,<2.3-dev",
                 "symfony/css-selector": ">=2.1,<2.3-dev",
+                "symfony/dom-crawler": ">=2.1,<2.3-dev",
                 "symfony/finder": ">=2.1,<2.3-dev",
+                "symfony/form": ">=2.1,<2.3-dev",
+                "symfony/locale": ">=2.1,<2.3-dev",
                 "symfony/monolog-bridge": ">=2.1,<2.3-dev",
+                "symfony/options-resolver": ">=2.1,<2.3-dev",
                 "symfony/process": ">=2.1,<2.3-dev",
+                "symfony/security": ">=2.1,<2.3-dev",
+                "symfony/serializer": ">=2.1,<2.3-dev",
                 "symfony/translation": ">=2.1,<2.3-dev",
                 "symfony/twig-bridge": ">=2.1,<2.3-dev",
                 "symfony/validator": ">=2.1,<2.3-dev",
-                "symfony/serializer": ">=2.1,<2.3-dev",
-                "symfony/dom-crawler": ">=2.1,<2.3-dev",
-                "symfony/options-resolver": ">=2.1,<2.3-dev"
+                "twig/twig": ">=1.8.0,<2.0-dev"
             },
             "suggest": {
                 "symfony/browser-kit": ">=2.1,<2.3-dev",
                 "symfony/css-selector": ">=2.1,<2.3-dev",
                 "symfony/dom-crawler": ">=2.1,<2.3-dev"
             },
-            "time": "2013-02-08 11:41:41",
+            "time": "2013-02-11 14:52:27",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -396,15 +396,15 @@
                 "php": ">=5.3.3"
             },
             "require-dev": {
+                "doctrine/common": ">=2.2,<2.4-dev",
                 "symfony/config": "2.1.*",
-                "symfony/yaml": "2.1.*",
                 "symfony/http-kernel": "2.1.*",
-                "doctrine/common": ">=2.2,<2.4-dev"
+                "symfony/yaml": "2.1.*"
             },
             "suggest": {
+                "doctrine/common": ">=2.2,<2.4-dev",
                 "symfony/config": "2.1.*",
-                "symfony/yaml": "2.1.*",
-                "doctrine/common": ">=2.2,<2.4-dev"
+                "symfony/yaml": "2.1.*"
             },
             "time": "2013-01-09 08:51:07",
             "type": "library",
@@ -452,18 +452,18 @@
             "require-dev": {
                 "symfony/form": "2.1.*",
                 "symfony/routing": "2.1.*",
+                "symfony/security": "2.1.*",
                 "symfony/templating": "2.1.*",
                 "symfony/translation": "2.1.*",
-                "symfony/yaml": "2.1.*",
-                "symfony/security": "2.1.*"
+                "symfony/yaml": "2.1.*"
             },
             "suggest": {
                 "symfony/form": "2.1.*",
                 "symfony/routing": "2.1.*",
+                "symfony/security": "2.1.*",
                 "symfony/templating": "2.1.*",
                 "symfony/translation": "2.1.*",
-                "symfony/yaml": "2.1.*",
-                "symfony/security": "2.1.*"
+                "symfony/yaml": "2.1.*"
             },
             "time": "2013-01-17 15:20:05",
             "type": "symfony-bridge",
@@ -491,22 +491,22 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.12.1",
+            "version": "v1.12.2",
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Twig.git",
-                "reference": "v1.12.1"
+                "reference": "v1.12.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig/archive/v1.12.1.zip",
-                "reference": "v1.12.1",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/v1.12.2",
+                "reference": "v1.12.2",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "2013-01-15 20:03:52",
+            "time": "2013-02-09 18:21:53",
             "type": "library",
             "extra": {
                 "branch-alias": {

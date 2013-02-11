@@ -7,9 +7,3 @@ I created project for personal use as I found myself repeating a lot of code, bu
 ## Installation
 
 	composer create-project marcqualie/silex-mongo-skeleton
-
-
-## Credits
-
-- @fabpot - Originally created Silex
-- @igorw - I used his config plugin and a core contributor to Silex
