@@ -24,11 +24,12 @@ $app->register(new MongoMinify\Silex\ServiceProvider());
 
 
 // Register Twig
-$app->register(new Silex\Provider\TwigServiceProvider(), array(
-	'twig.cache_dir' => __DIR__ . '/cache',
-	'twig.path' => __DIR__ . '/app/View'
+$app->register(new Silex\Provider\TwigServiceProvider(), array(	
+	'twig.path' => __DIR__ . '/app/View',
+	'twig.options' => array(
+		'cache' => __DIR__ . '/cache'
+	)
 ));
-
 
 // App Routes
 $app->get('/', Router::getController('Index'));
