@@ -1,5 +1,5 @@
 {
-    "hash": "d3b88f21aead8d4194fc7acf7a3a9c83",
+    "hash": "28bd1f2c8fa5608e209c6c57ff1b1790",
     "packages": [
         {
             "name": "igorw/config-service-provider",
@@ -149,12 +149,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Silex.git",
-                "reference": "eb15c4b481b57b54adc51c250cd12eb650d619b3"
+                "reference": "81988ead4c5971278b20711ab24c2c1a88baf102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Silex/zipball/eb15c4b481b57b54adc51c250cd12eb650d619b3",
-                "reference": "eb15c4b481b57b54adc51c250cd12eb650d619b3",
+                "url": "https://api.github.com/repos/fabpot/Silex/zipball/81988ead4c5971278b20711ab24c2c1a88baf102",
+                "reference": "81988ead4c5971278b20711ab24c2c1a88baf102",
                 "shasum": ""
             },
             "require": {
@@ -190,7 +190,7 @@
                 "symfony/css-selector": ">=2.1,<2.3-dev",
                 "symfony/dom-crawler": ">=2.1,<2.3-dev"
             },
-            "time": "2013-02-11 14:52:27",
+            "time": "2013-02-12 10:12:29",
             "type": "library",
             "extra": {
                 "branch-alias": {
