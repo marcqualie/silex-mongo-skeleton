@@ -8,6 +8,14 @@ use Silex\Application;
 $app = new Application();
 
 
+// Exception Handler
+use Symfony\Component\HttpKernel\Debug\ErrorHandler;
+use Symfony\Component\HttpKernel\Debug\ExceptionHandler;
+error_reporting(-1);
+ErrorHandler::register();
+ExceptionHandler::register();
+
+
 // Environment
 define('APPROOT', __DIR__);
 $app['version'] = '0.0.0';
@@ -31,9 +39,27 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 	)
 ));
 
+
+// Logging
+$app->register(new Silex\Provider\MonologServiceProvider(), array(
+	'monolog.name' => 'SilexMongoSkeleton',
+	'monolog.level' => Monolog\Logger::WARNING,
+	'monolog.logfile' => __DIR__ . '/logs/' . date('Y-m-d') . '-' . $app['env'] . '.log',
+));
+
+
+// Custom Error Handler
+$app->error(function ($exception, $code) use ($app) {
+	if ($code === 404)
+	{
+		return 'Error 404: Not Found';
+	}
+});
+
+
 // App Routes
 $app->get('/', Router::getController('Index'));
-$app->get('/example.json', Router::getController('JsonExample'));
+$app->get('/example-json', Router::getController('JsonExample'));
 
 
 // Return Instance

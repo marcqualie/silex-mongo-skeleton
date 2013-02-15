@@ -1,4 +1,5 @@
 /cache
+/logs
 /vendor
 /app/Config/*
 !/app/Config/default.php.dist

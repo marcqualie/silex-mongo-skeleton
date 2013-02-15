@@ -3,7 +3,7 @@
 return array(
 	
 	// MongoDB
-	'mongo.uri' => 'mongodb://127.0.0.1:27017',
+	'mongo.server' => 'mongodb://127.0.0.1:27017',
 	'mongo.options' => array(
 		'connect' => true
 	),
